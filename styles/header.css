@@ -1,0 +1,22 @@
+.header {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 7%;
+}
+.container {
+  display: flex;
+  justify-content: start;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+.showInputWindow {
+  width: 721px;
+  height: 75px;
+  margin-top: 20%;
+  font-size: 38px;
+  color: white;
+  background-color: #5383FF;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

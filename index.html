@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Погода</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <button class="showInputWindow" data-path="show">Добавить новый виджет</button>
+        <h1 class="name">Погода</h1>
+        <img class="icon" src="images/weather-icon.png" width= "200", height="200">
+    </div>
+</header>
+<main class="main">
+    <section class="modals">
+        <div class="modal-overlay">
+            <div class="modal modal--1" data-target="show">
+                <div class="modal__city">
+
+                    <p class="modal__text-city">Введите название города</p>
+                    <input class="modal__input-city">
+                    <p class="modal__warning-city-letter">Название города может состоять только из букв!</p>
+                    <p class="modal__warning-city">Упс! Такого города не существует...</p>
+                    <button class="modal__show-city">Показать погоду</button>
+                    <button class="modal__coord">По широте</button>
+                </div>
+                <p class="modal__text-lat">Введите широту</p>
+                <input class="modal__input-lat" type="text">
+                <p class="modal__warning-lat">Ошибка! Введите число в диапазоне от -90 до 90</p>
+                <p class="modal__text-lon">Введите долготу</p>
+                <input class="modal__input-lon" type="text">
+                <p class="modal__warning-lon">Ошибка! Введите число в диапазоне от -180 до 180</p>
+                <button class="modal__onCity">По городу</button>
+                <button class="modal__show">Показать погоду</button>
+            </div>
+            <button class="modal__close">X</button>
+        </div>
+    </section>
+    <section class="vidjets"> </section>
+</main>
+</body>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=a694c386-f0eb-439e-9605-f5e17275cf6b"></script>
+<script src="script.js"></script>
+</html>

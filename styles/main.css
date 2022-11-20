@@ -1,0 +1,33 @@
+@import "header.css";
+@import "vidjets.css";
+@import "modals.css";
+
+body {
+  font-family: 'Heebo', sans-serif;
+}
+
+p {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 96px;
+  margin: 0px;
+}
+
+hr {
+  #margin-top: 40px;
+}
+
+h5 {
+  font-size: 23px;
+  font-weight: normal;
+  margin: 0%;
+  margin-bottom: 10px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
